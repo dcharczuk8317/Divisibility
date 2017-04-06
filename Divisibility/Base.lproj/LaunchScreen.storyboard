@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,14 +15,48 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graybackground" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-N8-fMB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damian Charczuk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-oo-KPN">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="igj-ga-dTt"/>
+                                    <constraint firstAttribute="height" constant="80" id="rVF-eO-jop"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-Fu-G1A">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="310" id="bZT-Yq-BwF"/>
+                                    <constraint firstAttribute="height" constant="100" id="e1A-ru-vL5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TXI-Fu-G1A" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="3i4-sQ-cMY"/>
+                            <constraint firstAttribute="trailing" secondItem="aAY-N8-fMB" secondAttribute="trailing" id="71L-cM-6DZ"/>
+                            <constraint firstItem="aAY-N8-fMB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="EJb-wQ-g0v"/>
+                            <constraint firstItem="aAY-N8-fMB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Egv-fR-7UN"/>
+                            <constraint firstItem="1CQ-oo-KPN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OrJ-gN-s40"/>
+                            <constraint firstItem="1CQ-oo-KPN" firstAttribute="top" secondItem="TXI-Fu-G1A" secondAttribute="bottom" constant="147" id="c1Y-hm-RhJ"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aAY-N8-fMB" secondAttribute="bottom" id="ctk-ws-C0C"/>
+                            <constraint firstItem="TXI-Fu-G1A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="205" id="kKC-cT-qE2"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.34375" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="graybackground" width="1350" height="810"/>
+    </resources>
 </document>
