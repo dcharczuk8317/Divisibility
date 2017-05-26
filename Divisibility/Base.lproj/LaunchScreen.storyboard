@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11521.1" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11517.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,22 +21,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graybackground" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-N8-fMB"/>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damian Charczuk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-oo-KPN">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="graybackground" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-N8-fMB">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-Fu-G1A">
+                                <rect key="frame" x="159" y="182" width="450" height="169"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="igj-ga-dTt"/>
-                                    <constraint firstAttribute="height" constant="80" id="rVF-eO-jop"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="450" id="dzj-SI-BJC"/>
+                                    <constraint firstAttribute="height" constant="169" id="gen-js-cqR"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Divisibility" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXI-Fu-G1A">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Damian Charczuk" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CQ-oo-KPN">
+                                <rect key="frame" x="234" y="630" width="300" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="310" id="bZT-Yq-BwF"/>
-                                    <constraint firstAttribute="height" constant="100" id="e1A-ru-vL5"/>
+                                    <constraint firstAttribute="height" constant="80" id="daL-lt-hrY"/>
+                                    <constraint firstAttribute="width" constant="300" id="hpa-lP-mtY"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="32"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,10 +51,11 @@
                             <constraint firstAttribute="trailing" secondItem="aAY-N8-fMB" secondAttribute="trailing" id="71L-cM-6DZ"/>
                             <constraint firstItem="aAY-N8-fMB" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="EJb-wQ-g0v"/>
                             <constraint firstItem="aAY-N8-fMB" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="Egv-fR-7UN"/>
+                            <constraint firstItem="1CQ-oo-KPN" firstAttribute="top" secondItem="TXI-Fu-G1A" secondAttribute="bottom" constant="279" id="Jcx-zw-Uyc"/>
                             <constraint firstItem="1CQ-oo-KPN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="OrJ-gN-s40"/>
-                            <constraint firstItem="1CQ-oo-KPN" firstAttribute="top" secondItem="TXI-Fu-G1A" secondAttribute="bottom" constant="147" id="c1Y-hm-RhJ"/>
+                            <constraint firstItem="TXI-Fu-G1A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="162" id="XeX-dq-gOi"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="aAY-N8-fMB" secondAttribute="bottom" id="ctk-ws-C0C"/>
-                            <constraint firstItem="TXI-Fu-G1A" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="205" id="kKC-cT-qE2"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="1CQ-oo-KPN" secondAttribute="bottom" constant="314" id="xAI-7E-jHb"/>
                         </constraints>
                     </view>
                 </viewController>
